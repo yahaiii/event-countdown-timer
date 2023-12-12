@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Countdown</title>
+
+  <!-- Include FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Include your CSS file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CDN links for flipclock and moment.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css">
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js"></script>
+
+  <!-- My JavaScript file -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2 id="eventTitle"></h2>
+    <div class="clock"></div>
+    <div class="controllers">
+      <label for="eventName">Event Name:</label>
+      <input type="text" id="eventName">
+      <label for="targetDate">Target Date:</label>
+      <input type="date" id="targetDate">
+      <button id="saveEvent">Start Timer</button>
+      <button id="resetEvent">Reset</button>
+    </div>
+    <div id="shareIcons">
+      <a href="#" id="shareFacebook"><i class="fab fa-facebook-square"></i></a>
+      <a href="#" id="shareTwitter"><i class="fab fa-twitter-square"></i></a>
+    </div>  
+  </div>
+</body>
+</html>
